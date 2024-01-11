@@ -1,0 +1,134 @@
+<!--Selectores Básicos
+Descendente-->
+
+<!--
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+    <head> <meta charset="UTF-8" />
+        <title>Ejemplo de estilos selector descendente</title>
+        <style type="text/css">
+            p span { color: red; }
+        </style>
+        </head>
+        <body>
+            <section>
+                <p> Aquí tenemos parte del texto <span>en rojo</span>.
+                    <br />
+                    Incluso en un nivel inferior, como un
+                    <a href="#"><span>enlace</span></a>
+                </p>
+                <br>
+                Fuera del párrafo el <span> SPAN se mantiene negro</span>
+            </section>
+    </body>
+</html>
+
+-->
+
+<!--
+
+<!DOCTYPE html>
+<html lang="es">
+    <head> <meta charset="UTF-8" />
+        <title>Ejemplo de estilos seelctor descendente</title>
+        <style type="text/css">
+            p span { color: red; }
+            h1 span { color: blue; }
+        </style>
+    </head>
+<body>
+    <section>
+        <h1> <span>Titulo en Azul</span></h1>
+        <p> Aquí tenemos parte del texto <span>en rojo</span>.
+    </section>
+</body>
+</html>
+
+-->
+
+<!--ENLACE-->
+
+<!--
+
+<!DOCTYPE html>
+<html lang="es">
+    <head> <meta charset="UTF-8" />
+    <title>Ejemplo de estilos sin CSS</title>
+    <style type="text/css">
+        p * a { color: red; }
+    </style>
+    </head>
+    <body>
+        <section>
+            <p><a href="#">Enlace</a></p>
+            <p><span><a href="#">Enlace</a></span></p>
+        </section>
+    </body>
+</html>
+
+-->
+
+<!--USANDO UNA CLASE-->
+
+<!--
+
+<!DOCTYPE html>
+<html lang="es">
+    <head> <meta charset="UTF-8" />
+        <title>Ejemplo de estilos selector de clase</title>
+    <style type="text/css">
+        .destacado { color: red; }
+    </style>
+    </head>
+        <body>
+        <section>
+            <p class="destacado">Lorem ipsum dolor sit amet...</p>
+            <p>Nunc sed lacus et est adipiscing accumsan...</p>
+            <p>Class aptent taciti sociosqu ad litora...</p>
+        </section>
+    </body>
+</html>
+    
+-->
+
+<!--
+
+<!DOCTYPE html>
+<html lang="es">
+    <head> <meta charset="UTF-8" />
+        <title>Ejemplo de estilos selector clase</title>
+        <style type="text/css">
+            .error { color: red; }
+            .destacado { font-size: 15px; }
+            .especial { font-weight: bold; }
+        </style>
+    </head>
+    <body>
+        <section>
+            <p class="especial destacado error">Párrafo de texto...</p>
+        </section>
+    </body>
+</html>
+-->
+
+<!--USANDO UN id ESTE SOLO SE UTILIZA PARA UN ELEMENTO UNICO-->
+
+<!DOCTYPE html>
+    <html lang="es">
+        <head> <meta charset="UTF-8" />
+            <title>Ejemplo de estilos con selector de id</title>
+            <style type="text/css">
+                #destacado { color: red; }
+            </style>
+        </head>
+        <body>
+            <section>
+                <p>Primer párrafo</p>
+                <p id="destacado">Segundo párrafo</p>
+                <p>Tercer párrafo</p>
+            </section>
+        </body>
+    </html>

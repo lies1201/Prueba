@@ -1,0 +1,156 @@
+<!--selector descendente y el selector de hijos-->
+
+<!--
+
+<!DOCTYPE html>
+<html lang="es">
+    <head> <meta charset="UTF-8" />
+    <title>Ejemplo de estilos selector descendente y el selector de hijos</title>
+    <style type="text/css">
+        p a { color: red; }
+        p > a { color: blue; }
+    </style>
+</head>
+<body>
+    <section>
+        <p><a href="#">Enlace1</a></p>
+        <p><span><a href="#">Enlace2</a></span></p>
+    </section>
+</body>
+</html>
+
+-->
+
+<!--El selector adyacente -->
+
+<!--
+
+<!DOCTYPE html>
+<html lang="es">
+    <head> <meta charset="UTF-8" />
+        <title>Ejemplo de estilos selector </title>
+        <style type="text/css">
+            h2 { color: green; }
+            h1 + h2 { color: red }
+        </style>
+    </head>
+<body>
+    <section>
+        <h1>Titulo Principal</h1>
+        <h2>Subtítulo1</h2>
+        <p></p><br /><p></p><br />
+        <h2>Subtítulo2</h2>
+    </section>
+</body>
+</html>
+
+-->
+
+<!--Selector de atributos-->
+<!--
+
+
+<!DOCTYPE html>
+<html lang="es">
+    <head> <meta charset="UTF-8" />
+        <title>Ejemplo de estilos selectores de atributos </title>
+        <style type="text/css">
+            /* Se muestran de color verde todos los enlaces que tengan
+            un atributo "id", independientemente de su valor */
+            a[id] { color: green; }
+            /* Se muestran de color amarillo todos los enlaces que tengan
+            un atributo "class" con el valor "externo" */
+            a[class="externo"] { color: yellow; }
+            /* Se muestran de color violeta todos los enlaces que apunten
+            al sitio "http://www.ejemplo.com" */
+            a[href="http://www.ejemplo.com"] { color: purple ; }
+            /* Se muestran de color naranja todos los enlaces que tengan un atributo "class"
+            en el que al menos uno de sus valores sea "externo" */
+            a[class~="abajo"] { color: orange; }
+            /* Selecciona todos los elementos de la página cuyo atributo
+            "lang" sea igual a "en", es decir, todos los elementos en inglés */
+            *[lang=en] { color: brown; }
+            /* Selecciona todos los elementos de la página cuyo atributo
+            "lang" empiece por "es", es decir, "es", "es-ES", "es-AR", etc. */
+            *[lang|="es"] { color : red }
+        </style>
+    </head>
+<body>
+    <section>
+        <a id="interno" href="#">Enlace Interno</a> <br />
+        <a class="externo" href="#">Enlace Externo</a> <br />
+        <a class="arriba abajo" href="#">Enlace Arriba/Abajo</a> <br />
+        <a href="http://www.ejemplo.com">Enlace Ejemplo</a> <br />
+        <a lang="en" href="#">Enlace Inglés</a> <br />
+        <a lang="es-ar" href="#">Enlace Español</a> <br />
+    </section>
+</body>
+</html>
+
+-->
+<!--Selectores de Herencia-->
+
+<!--
+
+<!DOCTYPE html> <html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ejemplo de estilos herencia</title>
+        <style type="text/css">
+            body { color: blue; }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Titulo Principal</h1>
+            <p>Un párrafo de texto no muy largo.</p>
+        </section>
+    </body>
+    </html>
+
+    -->
+
+    <!--Modificar estilos de herencia-->
+
+    <!--
+   
+    <!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8" /> <title>Herencia</title>
+            <style>
+                body {color: blue; font-family: Arial;}
+                p { font-family: cursive;} /* Los párrafos los pongo en Comic Sans*/
+                span {color: red;}
+            </style>
+        </head>
+        <body>
+            <section>
+            <h1>Titulo de Sección</h1>
+            <p> Esto es un párrafo con <span> TEXTO ESPECIAL</span></p>
+            </section>
+        </body>
+    </html>
+         
+    -->
+
+    <!--colisiones-->
+    
+    <!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8" />
+            <title>Ejemplo de estilos colisiones</title>
+            <style type="text/css">
+                p { color: red; }
+                p#especial { color: green; }
+                * { color: blue; }
+            </style>
+        </head>
+        <body>
+            <section>
+                <h1>Titulo Principal</h1>
+                <p id="especial">...</p>
+            </section>
+        </body>
+    </html>
