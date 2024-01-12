@@ -1,0 +1,42 @@
+/*CSS del Ejercicio 4_2*/
+
+#titulo { 
+    color: teal;
+}
+
+p strong, a, tbody th, tfoot { 
+    color: red;
+}
+
+span.destacado, thead, th.especial, td strong {
+    color: orange;
+}
+
+#subtitulo, a em, caption {
+    color: blue;
+}
+
+span.especial {
+    color: purple;
+}
+
+tbody td, p > a {
+    color: green;
+}
+
+#adicional {
+    color: olive;
+}
+
+#especial {
+    color: fuchsia;
+}
+
+table { 
+    border-collapse: collapse;
+}
+
+th,td {
+    border: 1.5px solid black;
+       padding: 8px;
+}

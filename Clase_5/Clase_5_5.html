@@ -1,0 +1,352 @@
+<!--Ejemplo Simple-->
+
+<!--
+
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8" />
+            <title>Enlaces</title>
+            <style type="text/css">
+                a { margin: 1em 0; display: block;}
+                .alternativo {color: #CC0000;}
+                .simple {text-decoration: none;}
+                .importante {font-weight: bold; font-size: 1.3em;}
+                .especial {text-decoration:overline;}
+        </style>
+        </head>
+        <body>
+        <section>
+            <a href="#">Enlace con el estilo por defecto</a>
+            <a class="alternativo" href="#">Enlace de color rojo</a>
+            <a class="simple" href="#">Enlace sin subrayado</a>
+            <a class="importante" href="#">Enlace muy importante</a>
+            <a class="especial" href="#">Enlace con un estilo especial</a>
+        </section>
+        </body>
+    </html>
+
+-->
+
+<!--Ejemplo mas complejo-->
+
+<!--
+
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8" />
+            <title>Enlaces Avanzados</title>
+            <style type="text/css">
+                a { display: block; color: white;
+                text-decoration: none; }
+                a:hover { color: red;}
+                .enlace { width:100px; height:50px;
+                font-size:16px; margin: 0 auto;
+                background:#101921;
+                text-align: center;
+                border: 6px solid #89A;
+                border-radius: 10px;
+                padding-top: 20px;
+
+                /* Transiciones CSS*/
+                /*webkit-transition-property:width,height;*/
+                transition-property:width,height;
+                transition-duration:2s;
+                }
+
+                .enlace:hover { width:300px; height:200px;
+                font-size:64px;
+                background:#606971;
+                border-radius: 150px;
+                padding-top: 100px;
+                transition-property:width,height;
+                transition-duration:2s; }
+            </style>
+        </head>
+        <body>
+            <section>
+                <div class="enlace"><a href="#">¿Queréis mas?</a></div>
+            </section>
+        </body>
+    </html>
+
+-->
+
+<!--Otro ejemplo (imágenes para tipos de archivos)-->
+
+<!--
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Enlaces con Imagen</title>
+        <style type="text/css">
+            a {
+                margin: 1em 0;
+                float: left;
+                clear: left;
+            }
+
+            .rss {
+                color: #E37529;
+                padding: 0 0 0 18px;
+                background: #FFF url("http://cdn3.iconfinder.com/data/icons/socialnetworking/16/rss.png") no-repeat left center;
+            }
+
+            .pdf {
+                padding: 0 0 0 22px;
+                background: #FFF url("http://cdn1.iconfinder.com/data/icons/silk2/page_white_acrobat.png") no-repeat left center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <a href="#">Enlace con el estilo por defecto</a>
+        <a class="rss" href="#">Enlace a un archivo RSS</a>
+        <a class="pdf" href="#">Enlace a un documento PDF</a>
+    </body>
+
+</html>
+
+-->
+
+<!--Otro ejemplo (enlaces como botones):-->
+
+<!--
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Enlaces Botón</title>
+    <style type="text/css">
+        a {
+            margin: 1em 0;
+            float: left;
+            clear: left;
+        }
+
+        a.boton {
+            text-decoration: none;
+            color: #222;
+            background: #EEE;
+            border: 1px outset #CCC;
+            padding: .1em .5em;
+        }
+
+        a.boton:hover {
+            background: #CCB;
+        }
+
+        a.boton:active {
+            border: 1px inset #000;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="boton" href="#">Guardar</a>
+    <a class="boton" href="#">Enviar</a>
+    </section>
+</body>
+
+</html>
+    
+-->
+
+<!--Ejemplo Listas -> Menu Horizontal-->
+
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            ul.menu {
+                background: #F4F4F4;
+                border: 1px solid #7C7C7C;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            ul.menu li a {
+                color: #333;
+                display: block;
+                padding: .3em;
+                text-decoration: none;
+            }
+
+            ul.menu li {
+                float: left;
+                width: 20%;
+            }
+
+            ul.menu {
+                overflow: hidden;
+            }
+
+            ul.menu li a {
+                border-left: 1px solid #FFF;
+                border-right: 1px solid #7C7C7C;
+
+            }
+            #sinborde{
+                border-right: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul class="menu">
+            <li><a href="#">Elemento 1</a></li>
+            <li><a href="#">Elemento 2</a></li>
+            <li><a href="#">Elemento 3</a></li>
+            <li><a href="#">Elemento 4</a></li>
+            <li><a href="#" id="sinborde">Elemento 5</a></li>
+        </ul>
+    </body>
+
+</html>
+    
+-->
+
+<!--Ejemplo Formularios-->
+
+<!--
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Inputs Alienadas</title>
+        <style type="text/css">
+            label {
+                display: block;
+                margin: .5em 0 0 0;
+            }
+
+            .btn {
+                display: block;
+                margin: 1em 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <legend>Alta en el servicio</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" />
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" size="50" />
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" size="10" maxlength="9" />
+                <label for="clave">Contraseña</label>
+                <input type="password" id="clave" />
+                <input class="btn" type="button" value="Darme de alta" />
+            </fieldset>
+        </form>
+    </body>
+
+</html>
+ 
+-->
+
+<!--Ejemplo de ubicación del aside a la derecha:-->
+
+<!--
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #pagina {
+                background: rgb(145, 145, 201);
+                min-width: 940px;
+                max-width: 940px;
+                padding: 10px 10px;
+                margin-bottom: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                overflow: hidden;
+            }
+
+            #articles {
+                float: left;
+                width: 620px;
+            }
+
+            article {
+                width: 620px;
+                background: rgb(157, 207, 157);
+                height: 150px;
+                margin-bottom: 10px;
+            }
+
+            aside {
+                background: rgb(153, 123, 123);
+                margin: 0px;
+                width: 300px;
+                height: 250px;
+                float: right;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="pagina">
+            <section id="articles">
+                <article></article>
+                <article></article>
+                <article></article>
+            </section>
+            <aside></aside>
+        </div>
+    </body>
+</html>
+    
+-->
+
+<!--Ejemplo de Formulario usando Bootstrap-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejemplo Bootstrap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Node JS Express Form </h1>
+    <form>
+        <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="Enter first name" name="first_name">
+        </div>
+        <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" aria-describedby="emailHelp" placeholder="Enter last name" name="last_name">
+        </div>
+        <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Enter email">
+        </div>
+        <button type="button" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+</html>
+
