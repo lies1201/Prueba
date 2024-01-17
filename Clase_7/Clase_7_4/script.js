@@ -1,15 +1,18 @@
 //Ejercicio 1.: Solicita al usuario tres números enteros e indícale cuál es el menor.
 
+/*Esta opcion que hice no esta del todo correcta porque no se va a utilizar la variable menor
+solo la necesitamos para mostrar, no para guardar*/
+
 /*var menor;
 var n1 = prompt("Inserta el Primer número");
 var n2 = prompt("Inserta el Segundo número");
 var n3 = prompt("Inserta el Tercer número");
 
-if ((n1<n2)&&(n1<n3)){
+if ((n1<=n2)&&(n1<=n3)){
     menor=n1;
 }
 else {
-    if ((n2<n1)&&(n2<n3)){
+    if ((n2<=n1)&&(n2<=n3)){
         menor=n2;
     }
     else {
@@ -18,9 +21,28 @@ else {
 }
 alert("El menor es: " +menor);*/
 
+// Se tiene que hacer de la siguiente manera:
+
+
+/*var n1 = prompt("Inserta un número");
+var n2 = prompt("Inserta otro número");
+var n3 = prompt("Inserta el último número");
+
+if(n1<=n2 && n1<=n3){
+  alert("El menor es "+n1);
+}else{
+  if(n2<=n1 && n2<=n3){
+    alert("El menor es "+n2);
+  }else{
+    alert("El menor es "+n3);
+  }
+}*/
+
 
 /*Ejercicio 2: Solicita al usuario una frase y una letra y muestra la 
 cantidad de veces que aparece la letra en la frase.*/
+
+/*No se puede usar al while porque seria una mala practica*/
 
 /*var frase = prompt("Inserta una frase");
 var letra = prompt("Inserta una letra a buscar");
@@ -36,7 +58,25 @@ while(i<frase.length){
 }
 alert("Hay " +contar +" veces" +"la letra "+letra);*/
 
-//Ejercicio 3: Suma o resta (según elija el usuario) dos números reales
+//Se tiene que utilizar un for porque hay que recorrer la frase entera
+
+/*var frase = prompt("Inserta una frase");
+var letra = prompt("Inserta una letra");
+var cont = 0;
+
+
+for (var i = 0; i < frase.length; i++) {
+  if(frase[i]==letra){
+    cont++;
+  }
+}
+
+alert("El número de veces que aparece la "+ letra + "es: "+ cont);*/
+
+
+//Ejercicio 3: Suma o resta (según elija el usuario) dos números reales 
+
+//debo validar que sea un numero y no letra
 
 /*var num1 = prompt("Inserta el primer numero");
 var num2 = prompt("Inserta el segundo numero");
@@ -49,7 +89,7 @@ if ((op =='S') || (op =='s')) {
     suma = num1 + num2;
     alert("la suma " +num1+" + " +num2 + " es= " +suma);
 } 
-else {
+else { //validar en caso que meta otra opcion
     resta = num1 - num2;
     alert("la resta " +num1+" - " +num2 + " es= " +resta);
 }*/
@@ -58,22 +98,22 @@ else {
 correctos y permite que el usuario valide (dispone de 3 intentos)*/
 
 
-var usuario = 'lies';
+/*var usuario = 'lies';
 var clave = 'hola';
 var user,pass;
-let intentos=3;
+let intentos=4;
 
     do{
-        do{
             user = prompt("Inserta el usuario");
             pass = prompt("Inserta la clave");
             intentos--;
             alert("el usuario o la contraseña son incorrectos, te quedan " +intentos+" intentos");
-        } while (intentos>0);
-        alert("el usuario o");
-    
-    }while ((user!=usuario)||(pass!=clave));
-    
+
+    }while (((user!=usuario)||(pass!=clave))&&(intentos>0));
+
+
+    alert("el usuario Bloqueado");
+    */
 
 
 
