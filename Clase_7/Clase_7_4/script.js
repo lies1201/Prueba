@@ -89,9 +89,12 @@ if ((op =='S') || (op =='s')) {
     suma = num1 + num2;
     alert("la suma " +num1+" + " +num2 + " es= " +suma);
 } 
-else { //validar en caso que meta otra opcion
+else { 
+  if ((op =='R') || (op =='r')) {//validar en caso que meta otra opcion
     resta = num1 - num2;
     alert("la resta " +num1+" - " +num2 + " es= " +resta);
+  } else
+  alert("LA operacion no se puede realizar);
 }*/
 
 /*ejercicio 4: Almacena en dos variables datos de validación (usuario y contraseña) 

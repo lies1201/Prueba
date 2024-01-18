@@ -100,27 +100,113 @@ function cadena() {
 
 function mostrar() {
     var mos = "";
-    var most ="";
-    var mostra = "";
-    var veces= 4;
-    
-    for (let i = 0; i < veces; i++) {
-    
-    // mos = mos + "*+_" 
-    }
-    alert(mos);
+
+  for (let i = 0; i < 12; i++) {
+    if (i%3==0) {
+      mos = mos + "*";
+     } 
+    else {
+      if (i%3==1) {
+        mos = mos + "+";
+      }
+      else
+      mos = mos + "_";
+    }  
+  }
+ // return (mos);
+  alert(mos);
+
 }
+//console.log(mostrar());
+ 
+//El que compartio la profe
+
+/*function secuenciaSimple2(){
+  var cadena = "";
+
+  for (let i = 0; i < 9; i++) {
+    if(i%3==0){
+      cadena = cadena + "*";
+    }else{
+      if(i%3==1){
+        cadena = cadena + "+";
+      }else {
+        cadena = cadena + "_";
+      }
+    }
+  
+    switch(i%3){
+      case 0:
+        cadena = cadena + "*";
+        break;
+      case 1:
+        cadena = cadena + "+";
+        break;
+      default:
+        cadena = cadena + "_";
+        
+    }
+    
+  }
+  return cadena;
+}
+console.log(secuenciaSimple2());*/
+
 
 //Ejercicio 2.4: Una función que permita mostrar un triángulo como el siguiente:
 
-function triangulo() {
+function FormaTriangulo() {
+  var triangulo = "";
 
-    var t1="*";
-    var t2="**";
-    var t3="***"
-    var t4="****"
-    var t5="*****"
-
-    alert(t1+"\n"+t2+"\n"+t3+"\n"+t4+"\n"+t5);
+  /*for (let i = 0; i < 5; i++) {
+    for (let j = 0; j <= i; j++) {
+       triangulo= triangulo +"*";  
+    }
+    triangulo= triangulo + "\n";
     
+  } return triangulo;*/
+
+  for (let i = 5; i > 0; i--) {
+    for (let j = 0; j <= i; j++) {
+       triangulo= triangulo +"*";  
+    }
+    triangulo= triangulo + "\n";
+    
+  } //return triangulo;
+  alert(triangulo);
 }
+//console.log(FormaTriangulo());
+//alert(FormaTriangulo());
+
+
+/*Ejercicio 2.5: Una función que devuelva la diferencia en días entre dos fechas del mismo año 
+                (sólo tenemos en cuenta dia y mes)*/
+
+function fechas(){
+  /*var dia = prompt("Inserta un dia");
+  var mes = prompt("Inserta un mes");*/
+  /*var dia2 = prompt("Inserta otro dia");
+  var mes2 = prompt("Inserta otro mes");*/
+
+  var dia = "12";
+  var mes = "09";
+  var diferencia, mes_dia;
+
+if((mes>=0)&&(mwa<=12){
+  for (let i = 0; i < mes; i++) {
+    if ((mes[i]==2)){
+      mes_dia=28;
+    } else{
+      if ((mes[i]==4)||(mes[i]==6)||(mes[i]==9)||(mes[i]==11)){
+        mes_dia=30;
+      } else
+      mes_dia=31;
+    }
+  
+    
+  } 
+} 
+  
+}
+
+
