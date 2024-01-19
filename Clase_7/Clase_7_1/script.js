@@ -56,7 +56,7 @@ for (var i = 0; i < frase.length; i++) {
     cont++;
   }
 }
-
+ 
 alert("El número de veces que aparece la "+ '"'+letra +'"'+ " es: "+ cont);
 
 }
@@ -67,18 +67,17 @@ alert("El número de veces que aparece la "+ '"'+letra +'"'+ " es: "+ cont);
 /*Ejercicio 2.1: Una función que devuelva el número de cifras de un entero solicitado al usuario*/
 
 function cifras() {
-    var num1;
+    
     var cont = 0;
-    num1 = parseInt(num1);
+    var num1 = parseInt(num1);
     num1 = prompt("Inserta una número");
-    /*num2 = parseInt(num2);
-    num2 = prompt("Inserta una número");*/
-
-    while(num1>=0){
-
-    }
+  
+      for (let i = 0; i < num1.length; i++) {
+        cont=cont+1;
+      }
+      console.log("El número "+num1+" tiene "+cont+" cifra(s)"); 
+      alert("El número "+num1+" tiene "+cont+" cifra(s)");
 }
-
 
 
 /*ejercicio 2.2:Una función que muestre al usuario una secuencia de _ (se debe construir la 
@@ -118,6 +117,7 @@ function mostrar() {
 
 }
 //console.log(mostrar());
+
  
 //El que compartio la profe
 
@@ -158,6 +158,8 @@ console.log(secuenciaSimple2());*/
 function FormaTriangulo() {
   var triangulo = "";
 
+  //Triangulo
+
   /*for (let i = 0; i < 5; i++) {
     for (let j = 0; j <= i; j++) {
        triangulo= triangulo +"*";  
@@ -165,6 +167,8 @@ function FormaTriangulo() {
     triangulo= triangulo + "\n";
     
   } return triangulo;*/
+
+  // Triangulo Invertido
 
   for (let i = 5; i > 0; i--) {
     for (let j = 0; j <= i; j++) {
@@ -183,29 +187,40 @@ function FormaTriangulo() {
                 (sólo tenemos en cuenta dia y mes)*/
 
 function fechas(){
-  /*var dia = prompt("Inserta un dia");
-  var mes = prompt("Inserta un mes");*/
-  /*var dia2 = prompt("Inserta otro dia");
-  var mes2 = prompt("Inserta otro mes");*/
-
-  var dia = "12";
-  var mes = "09";
-  var diferencia, mes_dia;
-
-if((mes>=0)&&(mwa<=12){
-  for (let i = 0; i < mes; i++) {
-    if ((mes[i]==2)){
-      mes_dia=28;
-    } else{
-      if ((mes[i]==4)||(mes[i]==6)||(mes[i]==9)||(mes[i]==11)){
-        mes_dia=30;
-      } else
-      mes_dia=31;
-    }
   
+  mes=[31,28,31,30,31,30,31,31,30,31,30,31];
+ 
+  var fecha1 = prompt("Inserta una fecha dia y mes");
+  var fecha2 = prompt("Inserta otra fecha dia y mes");
+  diferencia=0;
+
+  for (let i = 0; i < fecha1.length; i++) {
     
-  } 
-} 
+    
+  }
+
+
+
+
+  
+ /* if(Date.parse(fecha1) > Date.parse(fecha2)) {
+   
+
+    console.log("fecha 1 > fecha 2");
+  }
+  else {
+    if (Date.parse(fecha1) < Date.parse(fecha2)) {
+    console.log("fecha 2 > fecha 1");
+    } 
+    else {
+    console.log("fecha 1 = fecha 2");
+    }
+  }*/
+  
+  
+ 
+
+ 
   
 }
 

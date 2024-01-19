@@ -115,8 +115,70 @@ let intentos=4;
     }while (((user!=usuario)||(pass!=clave))&&(intentos>0));
 
 
-    alert("el usuario Bloqueado");
-    */
+    alert("el usuario Bloqueado");*/
+  
+
+//El que dio la profe .Solucion 1
+
+/*const USERC = "admin";
+const PASSC = "1234";
+
+var cont = 1;
+var user;
+var pass;
+do{
+  user = prompt("Inserta el usuario");
+  pass = prompt("Inserta el pass");
+  if(user == USERC && pass == PASSC){
+    alert("Bienvenid@");
+  }else{
+    alert("Usuario y/o contraseña incorrecto. Llevas "+ cont + "intentos, dispones de 3");
+  }
+  cont++;
+}while(cont <= 3 && (user != USERC || pass != PASSC));
+
+if(cont == 3){
+  alert("Intentos agotados");
+}*/
+
+
+//Solucion 2:
+
+const USERC = "admin";
+const PASSC = "1234";
+
+var cont = 0;
+var user;
+var pass;
+var entro;
+do{
+  user = prompt("Inserta el usuario");
+  pass = prompt("Inserta el pass");
+  entro = (user == USERC && pass == PASSC);
+  cont++;
+  if(!entro && cont!=3){ //yo le coloque el !=3 para que no muestre el 3 intento en el msj
+    alert("Usuario y/o contraseña incorrecto. Llevas "+ cont + "intentos, dispones de 3");
+  }
+}while(cont < 3 && !entro);
+
+if(entro){
+  alert("Bienvenid@");
+}else{
+  alert("Intentos agotados");
+}
+
+/*Ejercicio 5: Solicita al usuario una letra, si inserta una a muestra el número 7, 
+              si es una b, el 9, si es una c el 101 y si no es ninguno de los tres,
+              indícale que se ha equivocado de letra*/
+
+
+
+
+
+
+
+
+/*Ejercicio 6: Ordena alfabéticamente un array con 7 palabras puedes usar el algoritmo de la burbuja*/
 
 
 
