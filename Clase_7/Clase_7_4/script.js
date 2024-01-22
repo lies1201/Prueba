@@ -106,16 +106,15 @@ var clave = 'hola';
 var user,pass;
 let intentos=4;
 
-    do{
-            user = prompt("Inserta el usuario");
-            pass = prompt("Inserta la clave");
-            intentos--;
-            alert("el usuario o la contraseña son incorrectos, te quedan " +intentos+" intentos");
+do{
+  user = prompt("Inserta el usuario");
+  pass = prompt("Inserta la clave");
+  intentos--;
+  alert("el usuario o la contraseña son incorrectos, te quedan " +intentos+" intentos");
 
-    }while (((user!=usuario)||(pass!=clave))&&(intentos>0));
+}while (((user!=usuario)||(pass!=clave))&&(intentos>0));
 
-
-    alert("el usuario Bloqueado");*/
+alert("el usuario Bloqueado");*/
   
 
 //El que dio la profe .Solucion 1
@@ -144,7 +143,7 @@ if(cont == 3){
 
 //Solucion 2:
 
-const USERC = "admin";
+/*const USERC = "admin";
 const PASSC = "1234";
 
 var cont = 0;
@@ -165,21 +164,43 @@ if(entro){
   alert("Bienvenid@");
 }else{
   alert("Intentos agotados");
-}
+}*/
 
 /*Ejercicio 5: Solicita al usuario una letra, si inserta una a muestra el número 7, 
               si es una b, el 9, si es una c el 101 y si no es ninguno de los tres,
               indícale que se ha equivocado de letra*/
 
+/*var letra = prompt("Inserte una letra");
 
-
-
-
-
+  switch(letra){
+    case 'a':
+      console.log(7);
+      break;
+    case 'b':
+      console.log(9);
+      break;
+    case 'c':
+      console.log(101);
+      break;
+    default:
+      console.log("Letra no válida");
+  }*/
 
 
 /*Ejercicio 6: Ordena alfabéticamente un array con 7 palabras puedes usar el algoritmo de la burbuja*/
 
+var palabras = ["Casa", "Arbol", "Corazon", "Mango", "Zapato", "Loro", "Perro"];
+var aux;
 
-
+for (let i = 0; i < palabras.length; i++) {
+  for (let j = 0; j < i; j++) {
+   
+    if (palabras[j] > palabras[j+1]) {
+      aux= palabras[j];
+      palabras[j] = palabras[j + 1];
+      palabras[j + 1] = aux;
+    } 
+  }
+}
+console.log(palabras); 
 

@@ -56,12 +56,11 @@ function direccion () {
     var penultimo;
     
     for (let i = 0; i < enlaces.length; i++) {
-        if (enlaces[i]== enlaces.length - 2){
-            penultimo =  enlaces.innerText;
+        if (enlaces[i]== enlaces[ enlaces.length - 2]){
+            penultimo =  enlaces[i];   
         }
-
-       
     }
+   // document.write (penultimo.innerHTML);
    // console.log(enlaces[enlaces.length - 2]);
     console.log(penultimo);
 }
@@ -72,6 +71,15 @@ console.log(direccion());
 //3-: Numero de enlaces que enlazan a http://prueba
 
 function enlacesPrueba () {
+    var enlacesEj = document.getElementsByTagName("a");
+    var cant=0;
+
+    for (let i = 0; i < enlacesEj.length; i++) {
+        if (enlacesEj[i]==){
+
+        }
+        
+    }
  
 }
 
