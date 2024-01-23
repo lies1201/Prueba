@@ -29,11 +29,12 @@ function ejecutar () {
     document.write (parrafo.innerHTML); // Escribimos directamente dentro del body (hay que usar innerHTML)
 }*/
 
+
 //Ejercicio clase 8.1:
 
 //1-: Número de enlaces de la página
 
-/*function numEnlaces(){
+function numEnlaces(){
 
 //var parrafos = document.getElementsByTagName("p");
 var enlaces = document.getElementsByTagName("a");
@@ -44,10 +45,9 @@ var enlace;
 for (let i = 0; i < enlaces.length; i++) {
     cont++; 
 }
-console.log("Hay "+cont+" enlace(s)");
-//alert("Hay "+cont+" enlace(s)");
+return"Hay "+cont+" enlace(s)";
 } 
-console.log(numEnlaces());*/
+console.log(numEnlaces());
 
 //2-: Dirección a la que enlaza el penúltimo enlace
 
@@ -60,9 +60,7 @@ function direccion () {
             penultimo =  enlaces[i];   
         }
     }
-   // document.write (penultimo.innerHTML);
-   // console.log(enlaces[enlaces.length - 2]);
-    console.log(penultimo);
+    return "El penultimo enlace señala la dirección: " +penultimo;
 }
 
 console.log(direccion());
@@ -72,16 +70,18 @@ console.log(direccion());
 
 function enlacesPrueba () {
     var enlacesEj = document.getElementsByTagName("a");
+    var comparar = "http://prueba/";
     var cant=0;
 
     for (let i = 0; i < enlacesEj.length; i++) {
-        if (enlacesEj[i]==){
-
+        if (enlacesEj[i].href == comparar){
+            cant++;
         }
-        
+
     }
- 
+ return "Hay "+cant+ " enlaces que apuntan a " +comparar;
 }
+console.log(enlacesPrueba());
 
 
 
@@ -90,5 +90,14 @@ function enlacesPrueba () {
 
 function enlaceParrafo () {
 
-}
+    var parrafos = document.getElementsByTagName("p");
+    var tercerParrafo = parrafos[2];
+    var enlacesTercerP = tercerParrafo.getElementsByTagName("a");
+    var numeros=0;
 
+    for (let i = 0; i < enlacesTercerP.length; i++) {
+            numeros++;
+        }
+        return "El tercer párrafo tiene: " +numeros + " enlaces";  
+    }
+    console.log(enlaceParrafo());
