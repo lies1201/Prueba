@@ -1,7 +1,7 @@
 /*Para el padre*/
 
-#padre{
-    display: flex;
+/*#padre{
+    display: flex;*/
     /*justify-content: flex-start;*/  /*alinea a la izquierda*/
     /*justify-content: flex-end;*/    /*alinea a la derecha*/
     /*justify-content: center;*/     /*alinea al centro*/
@@ -27,13 +27,28 @@
     /*align-items: baseline;*/
     /*align-items: stretch;*/
 
-    flex-flow: column-reverse wrap-reverse;
+    /*flex-flow: column-reverse wrap-reverse;
 
     background-color: blue;
-}
+}*/
 
 .hijo{
     background-color:yellow;
     align-self: flex-end;
 
+}
+
+
+#principal{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:antiquewhite;
+}
+
+.colores{
+    background-color: white;
+}
+
+.color{
+    background-color: blue;
 }

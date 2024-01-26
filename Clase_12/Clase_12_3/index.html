@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clase 12.2: Eventos Javascript</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+    <!--Para que no se ejecute el script hasdta que no se cargue el HTML-->
+    <!--<body onload="alert('La página se ha cargado completamente');"> -->
+
+        <!--Manejadores como atributos-->
+        <!--<div onmouseout="fuera();" onmouseover="encima();"></div>-->
+
+        <!--Manejadores usando this-->  <!--Si no se utiliza la variable this-->
+        <!--<div id="contenidos" style="width:150px; height:60px; border:thin solid silver"
+        onmouseover="document.getElementById('contenidos').style.borderColor='black';"
+        onmouseout="document.getElementById('contenidos').style.borderColor='silver';">
+        Sección de contenidos...
+        </div><br>-->
+
+        <!--Usando el this-->
+        <!--<div onmouseover="this.style.borderColor='red';" onmouseout="this.style.borderColor='blue';"></div><br>-->
+
+        <!--Manejadores como funciones externas-->
+        <!--<div onmouseover="dentro(this);" onmouseout="fuera(this);"></div>
+        <br>
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" onmouseout="oculta(this);" /><br>
+        -->
+        <!--Manejadores semánticos-->
+        <!--<input id="pinchable" type="button" value="Púlsame" /><br>-->
+
+        <!--otro ejemplo-->
+        <form>
+            Usuario <input type="text" id="usuario" /> <br>
+            Contraseña <input type="password" id="clave" /> <br>
+            <input type="button" value="Enviar" />
+        </form>
+    </body>
+</html>
