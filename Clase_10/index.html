@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Continuación</title>
+</head>
+<body>
+    <h2>elementos por nombre de clase</h2> 
+
+    <div class="clase1">div1</div>
+    <div class="clase2" style="background-color: pink;">div2</div>
+    <input type="button" value="Pintar div" onclick="pintar();">
+
+    <h2>Inserción de nodos en el árbol</h2>
+
+  
+    <p> Primer Párrafo</p>
+    <p> Segundo Párrafo</p>
+    <input type="button" value="Insertar párrafo" onclick="ejecutar();" />
+    <div class="nuevo"></div>
+
+    <h2>Otro ejemplo</h2>
+    <div id="tablas"></div>
+    <form name="form1">
+        <input type="button" value="Multiplicar" onclick="ejecutar();" />
+        <input type="button" value="Borrar" onclick="borrar();" />
+    </form>
+
+    <h2>Borrado de nodos del árbol</h2>
+    <ul>
+        <li name="li">Elemento1</li>
+        <li name="li">Elemento2</li>
+        <li name="li">Elemento3</li>
+    </ul>
+    <form name="form1">
+        <input type="button" value="Borrar li" onclick="ejecutar ();" />
+    </form>
+
+    <h2>Otro ejemplo: Inserción y borrado en una lista :</h2>
+    <ul id="miLista">
+        <li> Primer elemento de la lista</li>
+    </ul>
+    <input type="button" value="Añadir Elemento" onclick="insertar();" />
+    <input type="button" value="Borrar Elemento" onclick="borrar();" />
+
+    <h2>Extraer información de un input</h2>
+    <label>Nombre: </label>
+    <input type="text" name="nombre">
+    <br>
+    <br>
+    <br>
+    <input type="button" value="Saludar" onclick="saludar();">
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
