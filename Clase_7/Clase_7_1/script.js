@@ -186,42 +186,58 @@ function FormaTriangulo() {
 /*Ejercicio 2.5: Una función que devuelva la diferencia en días entre dos fechas del mismo año 
                 (sólo tenemos en cuenta dia y mes)*/
 
-function fechas(){
-  
-  mes=[31,28,31,30,31,30,31,31,30,31,30,31];
- 
-  var fecha1 = prompt("Inserta una fecha dia y mes");
-  var fecha2 = prompt("Inserta otra fecha dia y mes");
-  diferencia=0;
-
-  for (let i = 0; i < fecha1.length; i++) {
-    
-    
+function esDe30(mes) {
+  var encontrado = false;
+  var meses30 = [4, 6, 9, 11];
+  var i = 0;
+  while (i < meses30.length && !encontrado) {
+    encontrado = encontrado || meses30[i] == mes;
+    i++;
   }
+  return encontrado;
+}
 
-
-
-
-  
- /* if(Date.parse(fecha1) > Date.parse(fecha2)) {
-   
-
-    console.log("fecha 1 > fecha 2");
-  }
-  else {
-    if (Date.parse(fecha1) < Date.parse(fecha2)) {
-    console.log("fecha 2 > fecha 1");
-    } 
-    else {
-    console.log("fecha 1 = fecha 2");
+function sumarDias(mes, resultado) {
+  if (mes == 2) {
+    resultado = resultado + 28;
+  } else {
+    if (esDe30(mes)) {
+      resultado = resultado + 30;
+    } else {
+      resultado = resultado + 31;
     }
-  }*/
-  
-  
- 
+  }
+  return resultado;
+}
 
- 
-  
+function difFechas() {
+  var dia1 = parseInt(prompt("Inserta el primer día"));
+  var mes1 = parseInt(prompt("Inserta el primer mes"));
+  var dia2 = parseInt(prompt("Inserta el segundo día"));
+  var mes2 = parseInt(prompt("Inserta el segundo mes"));
+
+  var resultado = 0;
+  if (mes1 == mes2) {
+    if (dia1 < dia2) {
+      resultado = dia2 - dia1;
+    } else {
+      resultado = dia1 - dia2;
+    }
+  } else {
+    if (mes1 < mes2) {
+      for (let i = mes1 + 1; i < mes2; i++) {
+        resultado = sumarDias(i, resultado);
+      }
+      resultado = sumarDias(mes1, resultado) + dia2 - dia1;
+    } else {
+      for (let i = mes2 + 1; i < mes1; i++) {
+        resultado = sumarDias(i, resultado);
+      }
+      resultado = sumarDias(mes2, resultado) + dia1 - dia2;
+    }
+  }
+
+  alert(resultado);
 }
 
 
