@@ -1,0 +1,8 @@
+div#contenido {
+    width: 600px;
+    background-color: yellow;
+  }
+  div.principal {
+    width: 80%;
+    background-color: blue;
+  }

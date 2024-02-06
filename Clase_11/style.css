@@ -32,23 +32,77 @@
     background-color: blue;
 }*/
 
-.hijo{
-    background-color:yellow;
-    align-self: flex-end;
-
-}
 
 
 #principal{
     display: flex;
     justify-content: space-evenly;
-    background-color:antiquewhite;
+    flex-wrap: wrap;
+    background-color: #cbc4ce;
+    padding: 100px;
 }
 
 .colores{
+   
     background-color: white;
+    box-shadow: 0 0 5px;
+    border-color: #48490f;
+    padding: 20px;
+    margin-block-end: 20px;
 }
 
-.color{
-    background-color: blue;
+.border {
+    padding: 70px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+}
+.color1{
+    background-color: #7e7cd6;
+   
+}
+.color2{
+    background-color: gray;
+}
+
+.color3{
+    background-color: yellow;
+}
+
+.color4{
+    background-color: #4947df;
+}
+
+.color5{
+    background-color: coral;
+}
+
+.color6{
+    background-color: violet;
+}
+
+.color7{
+    background-color: green;
+}
+
+.color8{
+    background-color: rosybrown;
+}
+
+.color9{
+    background-color: #7cb5d6;
+}
+
+.color10{
+    background-color: #48490f;
+}
+
+
+.texto {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family:'Lucida Sans', Verdana, sans-serif;
+    font-style:inherit;
 }
