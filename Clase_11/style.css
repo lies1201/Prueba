@@ -38,14 +38,14 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: #cbc4ce;
+    background-color: #d0d7de;
     padding: 100px;
 }
 
 .colores{
    
     background-color: white;
-    box-shadow: 0 0 5px;
+    box-shadow: 0 0 1px;
     border-color: #48490f;
     padding: 20px;
     margin-block-end: 20px;
@@ -57,52 +57,53 @@
     box-shadow: 0 0 5px;
 }
 .color1{
-    background-color: #7e7cd6;
+    background-color: #6667ab;
    
 }
 .color2{
-    background-color: gray;
+    background-color: #939597;
 }
 
 .color3{
-    background-color: yellow;
+    background-color: #f5df4d;
 }
 
 .color4{
-    background-color: #4947df;
+    background-color: #0f4c81;
 }
 
 .color5{
-    background-color: coral;
+    background-color: #ff6f61;
 }
 
 .color6{
-    background-color: violet;
+    background-color: #5f4b8b;
 }
 
 .color7{
-    background-color: green;
+    background-color: #88B04B;
 }
 
 .color8{
-    background-color: rosybrown;
+    background-color: #F7CACA;
 }
 
 .color9{
-    background-color: #7cb5d6;
+    background-color: #93a9d1;
 }
 
 .color10{
-    background-color: #48490f;
+    background-color: #964F4C;
 }
 
 
 .texto {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-stretch: ultra-expanded;
+    font-weight: lighter;
 }
 
 h1 {
     text-align: center;
-    font-family:'Lucida Sans', Verdana, sans-serif;
-    font-style:inherit;
+    font-family:'Lucida Sans', Verdana, sans-serif;   
 }

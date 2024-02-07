@@ -30,3 +30,5 @@ function oculta(){
     mostrar.style.display = "inline";
 
   }
+
+  document.getElementById("enlace2").setAttribute("onclick", "oculta();");

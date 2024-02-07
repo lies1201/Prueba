@@ -6,10 +6,9 @@
 
 //4-Cuando una sección se oculte, debe cambiar el mensaje del enlace asociado (pista:propiedad innerHTML)
 
-function ocultaMuestra() {
-    var parrafo = document.getElementById("contenidos_1");
-    var enlace =  document.getElementById("enlace_1");
- 
+function ocultaMuestra(enlace,parrafo) {
+   // var enlace =  document.getElementById("enlace_1");
+   //var parrafo = document.getElementById("contenidos_1");
 
     if (enlace.textContent == "Ocultar contenidos"){
     parrafo.style.display = "none";
@@ -21,10 +20,12 @@ function ocultaMuestra() {
     }
 }
 
+
+
 window.onload = function() {
 
-    document.getElementById("enlace_1").onclick = ocultaMuestra;
-    document.getElementById("enlace_2").onclick = ocultaMuestra;
-    document.getElementById("enlace_3").onclick = ocultaMuestra;
+    document.getElementById("enlace_1").setAttribute("onclick", "ocultaMuestra(this,contenidos_1);");
+    document.getElementById("enlace_2").setAttribute("onclick", "ocultaMuestra(this,contenidos_2);");
+    document.getElementById("enlace_3").setAttribute("onclick", "ocultaMuestra(this,contenidos_3);");
 }
 
